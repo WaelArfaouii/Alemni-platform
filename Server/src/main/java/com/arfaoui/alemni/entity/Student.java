@@ -1,2 +1,4 @@
-package com.arfaoui.alemni.entity;public class Student {
+package com.arfaoui.alemni.entity;
+
+public class Student {
 }
