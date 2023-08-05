@@ -1,4 +1,4 @@
 package com.arfaoui.alemniapi.dto;
 
-public class OrderDto {
+public class RolesDto {
 }

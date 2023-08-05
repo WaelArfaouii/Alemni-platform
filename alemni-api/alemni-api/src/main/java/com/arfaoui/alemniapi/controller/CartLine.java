@@ -1,4 +1,4 @@
 package com.arfaoui.alemniapi.controller;
 
-public class PurchaseController {
+public class CartLine {
 }
