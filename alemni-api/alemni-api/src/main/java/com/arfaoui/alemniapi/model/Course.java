@@ -39,5 +39,11 @@ public class Course extends AbstractEntity {
     @JoinColumn(name = "idTeacher")
     private List<Teacher> teachers;
 
+    @ManyToMany
+    private List<WishList> wishLists ;
+
+    @ManyToMany
+    private List<LearningList> learningLists ;
+
 
 }

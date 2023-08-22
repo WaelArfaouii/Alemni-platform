@@ -15,6 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "teacher")
 public class Teacher extends AbstractEntity {
+
     @Column(name = "fname")
     private String fName;
 

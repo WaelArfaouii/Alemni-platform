@@ -18,12 +18,17 @@ import java.util.List;
 @Table(name = "cart")
 public class Cart extends AbstractEntity {
 
+    @OneToOne
+    @JoinColumn(name = "userid")
+    private User user ;
+
     @OneToMany(mappedBy = "cart")
     private List<CartLine> cartLines;
+
     @Column(name = "quantity")
     private BigDecimal quantity;
 
-    @Column(name = "price")
-    private BigDecimal price;
+    @Column(name = "totalPrice")
+    private BigDecimal totalPrice;
 
 }

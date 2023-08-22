@@ -6,25 +6,19 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Table(name = "learningList")
-public class LearningList extends AbstractEntity{
+@Table(name = "roles")
+public class Roles extends AbstractEntity {
 
+    @Column(name = "rolename")
+    private String roleName;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "iduser")
-    private User user ;
-
-    @ManyToMany
-    private List<Course> courses ;
-
-    @Column(name = "coursesnumber")
-    private Long coursesNumber ;
+    private User user;
 
 }
